@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { TfiAlignJustify } from "react-icons/tfi";
 import { TfiClose } from "react-icons/tfi";
@@ -118,7 +118,9 @@ export default function Navbar() {
               {t("pricing")}
             </a>
           </li>
-          <LanguageSwitcher />
+          <Suspense fallback={<div>Loading...</div>}>
+            <LanguageSwitcher />
+          </Suspense>
         </ul>
       </div>
     </div>
