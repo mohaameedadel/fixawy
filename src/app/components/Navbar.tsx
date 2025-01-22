@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { TfiAlignJustify } from "react-icons/tfi";
 import { TfiClose } from "react-icons/tfi";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -42,7 +43,7 @@ export default function Navbar() {
               height={90}
             />
             <h1
-              className={`text-main text-3xl lg:text-5xl ps-3 ${
+              className={`text-main text-3xl lg:text-5xl ps-3 font-semibold ${
                 scrolling ? "text-main" : showItems ? "text-main" : "text-white"
               }`}
             >
@@ -67,7 +68,7 @@ export default function Navbar() {
             showItems ? "flex " : "hidden"
           } lg:flex gap-6 flex-col lg:flex-row w-full lg:w-auto lg:bg-transparent p-4 lg:p-0`}
         >
-          <li className="nav-item">
+          <li onClick={() => setShowItems(false)} className="nav-item">
             <a
               href="#home"
               className={`block ${
@@ -77,7 +78,7 @@ export default function Navbar() {
               {t("home")}
             </a>
           </li>
-          <li className="nav-item">
+          <li onClick={() => setShowItems(false)} className="nav-item">
             <a
               href="#about"
               className={`block ${
@@ -87,7 +88,7 @@ export default function Navbar() {
               {t("about")}
             </a>
           </li>
-          <li className="nav-item">
+          <li onClick={() => setShowItems(false)} className="nav-item">
             <a
               href="#services"
               className={`block ${
@@ -97,7 +98,7 @@ export default function Navbar() {
               {t("services")}
             </a>
           </li>
-          <li className="nav-item">
+          <li onClick={() => setShowItems(false)} className="nav-item">
             <a
               href="#blog"
               className={`block ${
@@ -107,6 +108,17 @@ export default function Navbar() {
               {t("blog")}
             </a>
           </li>
+          <li onClick={() => setShowItems(false)} className="nav-item">
+            <a
+              href="#pricing"
+              className={`block ${
+                scrolling ? "text-main" : showItems ? "text-main" : "text-white"
+              } duration-500 `}
+            >
+              {t("pricing")}
+            </a>
+          </li>
+          <LanguageSwitcher />
         </ul>
       </div>
     </div>

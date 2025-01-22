@@ -81,6 +81,9 @@ export default function HowItWork() {
               <p className="text-base font-normal my-6 text-secondary">
                 {t("fixawyBooking")}
               </p>
+              <button className="py-3 px-6 rounded-md bg-main text-white font-semibold duration-200">
+                {t("learnMore")}
+              </button>
             </div>
           </div>
           <div>{renderHowItWorks()}</div>

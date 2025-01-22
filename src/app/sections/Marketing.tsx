@@ -42,7 +42,7 @@ export default function Marketing() {
               <button className="py-3 px-6 rounded-md bg-red-600 font-semibold hover:bg-red-700 duration-200 text-white">
                 {t("claimOfferNow")}
               </button>
-              <button className="py-3 px-6 rounded-md bg-basic hover:bg-yellow-700 text-main font-semibold duration-200">
+              <button className="py-3 px-6 rounded-md bg-basic hover:bg-yellow-700 text-white font-semibold duration-200">
                 {t("seeAllPromotions")}
               </button>
             </div>

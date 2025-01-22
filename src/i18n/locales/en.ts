@@ -55,6 +55,41 @@ const common = {
   promotionsAndOffers: "Promotions & Offers",
   claimOfferNow: "Claim Offer Now",
   seeAllPromotions: "See All Promotions",
+  learnMore: "Learn More",
+  affordableRenovationServices:
+    "Affordable Renovation Services with Flexible Payments!",
+  turnYourDreamProjectIntoReality:
+    "Turn your dream project into reality without financial stress.",
+  detailsOnInstallmentPlans:
+    "Details on installment plans and eligible services.",
+  includeAPaymentCalculator: "Include a payment calculator.",
+  applyForInstallmentPlan: "Apply for installment plan",
+  ourPortfolio: "Our Portfolio",
+  seeMoreProjects: "See more projects",
+  ourPartners: "Our Partners",
+  partners: "Partners",
+  proudlyPartneredWithIndustryLeaders:
+    "Proudly partnered with industry leaders to ensure top-quality service.",
+  exploreOurPartners: "Explore Our Partners.",
+  ourTestimonials: "Our Testimonials",
+  fromTheBlog: "From the Blog",
+  readMore: "Read More",
+  pricing: "Pricing",
+  transparentPrices: "Transparent prices for home renovation and maintenance!",
+  startup: "Startup",
+  standard: "Standard",
+  premium: "Premium",
+  getStarted: "Get Started",
+  stayUpdatedWithFixawy:
+    "Stay updated with Fixawy's latest services and offers.",
+  enterEmail: "Enter your email...",
+  subscribe: "Subscribe",
+  usefulLinks: "Useful Links",
+  faqs: "FAQs",
+  privacyPolicy: "Privacy Policy",
+  termsOfService: "Terms of Service",
+  contactDetails: "Contact Details",
+  copyRight: "Copyright © 2024 Fixawy. All rights reserved.",
 };
 
 export default common;
